@@ -18,22 +18,29 @@
 // Reemplaza estos valores con los de tu proyecto:
 // Firebase Console → tu proyecto → Configuración → Tus apps → SDK
 // ══════════════════════════════════════════════════════════
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAnvz_T1w6nGfa8HOnSDifB48Fe50maUko",
-  authDomain: "riqora-app.firebaseapp.com",
-  projectId: "riqora-app",
-  storageBucket: "riqora-app.firebasestorage.app",
-  messagingSenderId: "814665871462",
-  appId: "1:814665871462:web:ac8bc58ae78350195a7da7",
-  measurementId: "G-Z6RREERS0S"
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAnvz_T1w6nGfa8HOnSDifB48Fe50maUko",
+    authDomain: "riqora-app.firebaseapp.com",
+    projectId: "riqora-app",
+    storageBucket: "riqora-app.firebasestorage.app",
+    messagingSenderId: "814665871462",
+    appId: "1:814665871462:web:ac8bc58ae78350195a7da7",
+    measurementId: "G-Z6RREERS0S"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 };
 
 // Initialize Firebase
